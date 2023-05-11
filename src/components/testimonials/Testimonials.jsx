@@ -17,23 +17,23 @@ import 'swiper/css/pagination';
 const data =[
   {
     avatar: Avatar1,
-    name: 'Fazal',
-    review: 'Lorem ipsum,quod magnam nihil vitae sunt laboriosam quia vel, ex dolores ullam dicta obcaecati?'
+    name: 'Fazle Khaliq',
+    review: 'Thank You so much'
   },
   {
     avatar: Avatar2,
-    name: 'Khan',
-    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus soluta voluptatum quidem ass?'
+    name: 'David',
+    review: 'Great work'
   },
   {
     avatar: Avatar3,
-    name: 'Gul Khan',
-    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus soluta voluptatum quidemecati?'
+    name: 'SMC',
+    review: 'Nice to work with you'
   },
   {
     avatar: Avatar4,
-    name: 'Someone',
-    review: 'Lorem hi hihi quod magnam nihil vitae sunt laboriosam quia vel, ex dolores ullam dicta obcaecati?'
+    name: 'Ahmad',
+    review: 'Impressive work, keep it up'
   },
 ]
 const Testimonials =() => {
@@ -48,6 +48,8 @@ const Testimonials =() => {
       spaceBetween={50}
       slidesPerView={1}
       navigation
+      autoplay={true}
+      speed={2000}
       pagination={{ clickable: true }}
         >
           {

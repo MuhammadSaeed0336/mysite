@@ -11,45 +11,45 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Eclipse - Figma dashboard UI kit for data design web apps',
+    title: 'Auto Gemz - Cars Buying, Selling and Renting Site',
     github: 'htttp://github.com',
     demo: 'https://dribbble.com/shots/19773322-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Orion UI kit for Figma',
+    title: 'E-Commerce - Frontend using react Library',
     github: 'htttp://github.com',
     demo: 'https://dribbble.com/shots/19773375-Orion-UI-kit-for-Figma'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Eclipse - Figma dashboard UI kit for data design web apps',
+    title: 'Socail App - Using React, Node and Mongodb',
     github: 'htttp://github.com',
     demo: 'https://dribbble.com/shots/19773311-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps'
   },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Orion UI kit for Figma',
-    github: 'htttp://github.com',
-    demo: 'https://dribbble.com/shots/19773358-Orion-UI-kit-for-Figma'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Eclipse - Figma dashboard UI kit for data design web apps',
-    github: 'htttp://github.com',
-    demo: 'https://dribbble.com/shots/19773303-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Eclipse - Figma dashboard UI kit for data design web apps',
-    github: 'htttp://github.com',
-    demo: 'https://dribbble.com/shots/19773287-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps'
-  }
+  // {
+  //   id: 4,
+  //   image: IMG4,
+  //   title: 'Orion UI kit for Figma',
+  //   github: 'htttp://github.com',
+  //   demo: 'https://dribbble.com/shots/19773358-Orion-UI-kit-for-Figma'
+  // },
+  // {
+  //   id: 5,
+  //   image: IMG5,
+  //   title: 'Eclipse - Figma dashboard UI kit for data design web apps',
+  //   github: 'htttp://github.com',
+  //   demo: 'https://dribbble.com/shots/19773303-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps'
+  // },
+  // {
+  //   id: 6,
+  //   image: IMG6,
+  //   title: 'Eclipse - Figma dashboard UI kit for data design web apps',
+  //   github: 'htttp://github.com',
+  //   demo: 'https://dribbble.com/shots/19773287-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps'
+  // }
 ]
 
 function Portfolio() {
@@ -68,8 +68,8 @@ function Portfolio() {
               </div>
                 <h3>{title}</h3>
                 <div className='portfolio_item_cta'>
-                <a href={github} className='btn'>Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                {/* <a href={github} className='btn'>Github</a> */}
+                <a href={demo} className='btn' target='blank'>Live Demo</a>
                 </div>  
             </article>
             )

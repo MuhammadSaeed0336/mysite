@@ -75,6 +75,9 @@
         width: 50%;
         margin: 2rem auto 4rem;
     }
+    .about_me-image img{
+        height: fit-content;
+     }
   }
   
   /* =========Media quries (small devices ========*/
@@ -83,6 +86,9 @@
         width: 65%;
         margin: 0 auto 3rem;
     }
+    .about_me-image img{
+        height: fit-content;
+     }
     .about_cards{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;

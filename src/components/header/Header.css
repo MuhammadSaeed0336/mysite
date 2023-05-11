@@ -40,16 +40,28 @@ header{
 /* ========Me  ============ */
 .me{
     background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
+    width: 20rem;
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 4rem;
-    border-radius: 12em 12em 0 0;
+    border-radius: 6em 0 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 5rem 0 1.5rem 3rem;
 }
-
+.me img{
+    width: 20em;
+    border-radius: 6em 0 0 0;
+    position: relative;
+    animation: myfirst 5s infinite;
+}
+@keyframes myfirst {
+    0%   { left: 0px; top: 0px;}
+    25%  {left: 250px; top: 0px;}
+    50%  {left: 250px; top: 0px;}
+    75%  {left: 0px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+  }
 /* ===============scroll down ========== */
 .scroll_down {
     position: absolute;
@@ -63,10 +75,9 @@ header{
 /* =========Media quries (medium devices ========*/
 @media screen and (max-width: 1024px) {
     header{
-        height: 85vh;
+        height: 85vh !important;
       /* width: var(--container-width-md); */
     }
-    
   }
   
   /* =========Media quries (small devices ========*/

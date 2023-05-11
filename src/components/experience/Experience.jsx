@@ -36,6 +36,14 @@ const Experience =() => {
               <small className='text-light'>Experienced</small>
               </div>
             </article>
+
+            <article className='experience_details'>
+              <BsPatchCheckFill className="experience_details_icon" />
+              <div>
+              <h4>MUI</h4>
+              <small className='text-light'>Experienced</small>
+              </div>
+            </article>
           
             <article className='experience_details'>
               <BsPatchCheckFill className="experience_details_icon" />
@@ -64,15 +72,7 @@ const Experience =() => {
             <article className='experience_details'>
               <BsPatchCheckFill className="experience_details_icon" />
               <div>
-              <h4>Java</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            
-            <article className='experience_details'>
-              <BsPatchCheckFill className="experience_details_icon" />
-              <div>
-              <h4>C++</h4>
+              <h4>Node Js</h4>
               <small className='text-light'>Intermediate</small>
               </div>
             </article>
@@ -80,18 +80,26 @@ const Experience =() => {
             <article className='experience_details'>
               <BsPatchCheckFill className="experience_details_icon" />
               <div>
-              <h4>MySQL</h4>
-              <small className='text-light'>Basic</small>
+              <h4>Express</h4>
+              <small className='text-light'>Intermediate</small>
               </div>
             </article>
             
             <article className='experience_details'>
+              <BsPatchCheckFill className="experience_details_icon" />
+              <div>
+              <h4>Mongodb</h4>
+              <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            
+            {/* <article className='experience_details'>
               <BsPatchCheckFill className="experience_details_icon" />
               <div>
               <h4>C#</h4>
               <small className='text-light'>Intermediate</small>
               </div>
-            </article>
+            </article> */}
 
           </div>
         </div>

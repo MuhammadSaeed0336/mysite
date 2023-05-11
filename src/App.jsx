@@ -10,19 +10,19 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 function App() {
-    return (
-      <div>
-        <Header />
-        <Nav />
-        <About />
-        <Experience />
-        <Services />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-        <Footer /> 
-      </div>
-    );
-  }
-  
-  export default App;
+  return (
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </>
+  );
+}
+
+export default App;

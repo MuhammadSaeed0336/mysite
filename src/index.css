@@ -31,10 +31,10 @@ html{
 }
 body{
   font-family: 'Poppins', sans-serif;
-  background-color: var(--color-bg);
+  background-color: #0e0c21;
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url("./assets/bg_texture.jpg"); */
+  /* background-image: url("./assets/bg_texture.jpg") ; */
 }
 
 /* =============================General Styles============================ */

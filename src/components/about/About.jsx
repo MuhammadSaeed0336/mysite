@@ -24,23 +24,23 @@ const About=()=> {
             <article className='about_card'>
               <TbAward className='about_icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>2+ Years Working</small>
             </article>
 
             <article className='about_card'>
               <FiUser className='about_icon'/>
               <h5>Clients</h5>
-              <small>500+ Worldwide</small>
+              <small>50+ Worldwide</small>
             </article>
 
             <article className='about_card'>
               <VscFolderLibrary className='about_icon'/>
               <h5>Projects</h5>
-              <small>100+ Completed</small>
+              <small>20+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, adipisci eius nemo ipsa fugit cum cupiditate laudantium libero. Minima eos sed libero deleniti, consectetur tenetur totam! Minima saepe harum blanditiis?
+          Hello! My name is Muhammad Saeed, and I am thrilled to welcome you to my portfolio.Thank you for taking the time to explore my portfolio. I look forward to connecting with you and discussing how I can contribute to your next project. Let's collaborate and create something extraordinary together!
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
