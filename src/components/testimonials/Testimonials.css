@@ -8,7 +8,7 @@
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto 1rem;
-    border: 0.4rem solid var(--color-primary-variant);
+    border: 0.4rem solid var(--color-light);
 }
 .testimonial{
     background: var(--color-bg-variant);
@@ -16,6 +16,7 @@
     padding: 2rem;
     border-radius: 2rem;
     user-select: none;
+    word-wrap: break-word; 
 }
 .client_review{
     color: var(--color-light);
@@ -23,16 +24,42 @@
     display: block;
     width: 80%;
     margin: 0.8rem auto 0;
+    cursor: pointer;
 }
-
+.client_review button{
+    background-color: var(--color-bg-variant);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
 .swiper-pagination-clickable .swiper-pagination-bullet{
     background: var(--color-primary);
+}
+.btnContainer{
+    padding-bottom: 5rem;
+    margin-top: -6rem !important;
+}
+.p-btn{
+    all: unset;
+    width: 100%;
+    height: fit-content;
+    font-size: 20px;
+    margin-top: 2rem;
+    background-color: var(--color-bg-variant);
+    border-radius: 0 0 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /* =========Media quries (medium devices ========*/
 @media screen and (max-width: 1024px) {
     .container.testimonials_container{
         width: 60%;
+    }
+    .btnContainer{
+        margin-top: -4rem !important;
     }
   }
   
@@ -43,6 +70,10 @@
     }
     .client_review{
         width: var(--container-width-sm);
+    }
+    .client_avatar{
+       width: 30px;
+       height: 30px;
     }
   }
   

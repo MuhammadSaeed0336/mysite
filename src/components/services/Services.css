@@ -13,7 +13,7 @@
 
 .service:hover{
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color: var(--color-bg);
     cursor: default;
 }
 .service_head{
@@ -24,7 +24,7 @@
 }
 
 .service_head h3{
-    color: var(--color-bg);
+    color: var(--color-white);
     text-align: center;
     font-size: 1rem;
 }

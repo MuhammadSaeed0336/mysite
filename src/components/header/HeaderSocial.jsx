@@ -1,16 +1,47 @@
-import React from 'react';
-import {BsLinkedin} from "react-icons/bs";
-import {FaGithub} from "react-icons/fa";
-import {FiDribbble} from "react-icons/fi";
+import React from "react";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub, FaYoutube } from "react-icons/fa";
+import { CiDark } from "react-icons/ci";
+import { MdLightMode } from "react-icons/md";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/DarkModeContext";
 
 function HeaderSocial() {
+  // const { dispatch, darkMode } = useContext(DarkModeContext);
+
   return (
-    <div className='header_social'>
-        <a href="http://linkedIn.com" target="_blank"><BsLinkedin /></a>
-        <a href="http://github.com" target="_blank"><FaGithub /></a>
-        <a href="http://dribble.com" target="_blank"><FiDribbble /></a>
+    <>
+    {/* {darkMode === true ? (
+      <a>
+      <MdLightMode
+        className="icon"
+        onClick={() => dispatch({ type: "TOGGLE" })}
+      />
+    </a>
+    ) : (
+      <a>
+      <CiDark
+        className="icon"
+        onClick={() => dispatch({ type: "TOGGLE" })}
+      />
+    </a>
+    )} */}
+    <div className="header_social">
+      <a href="https://www.linkedin.com/in/mrsaeedkk/" target="_blank">
+        <BsLinkedin />
+      </a>
+      <a href="https://github.com/MuhammadSaeed0336" target="_blank">
+        <FaGithub />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCGwYVAsJ8tQaHUNfBfMl8BQ"
+        target="_blank"
+      >
+        <FaYoutube />
+      </a>
     </div>
-  )
+    </>
+  );
 }
 
 export default HeaderSocial;

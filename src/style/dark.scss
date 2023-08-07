@@ -1,0 +1,194 @@
+.app.dark {
+  background-color: #111;
+  color: rgb(156, 156, 156);
+  .theme-icon-container{
+    color: #bbb;
+    border: 1px solid #bbb;
+    .theme-icon{
+      color: #bbb;
+    }
+}
+h1{
+  color: white ;
+}
+  .header_social a {
+    color: #bbb;
+  }
+  .header_social::after {
+    background: #bbb;
+  }
+  .scroll_down {
+    color: #bbb;
+  }
+  .cta {
+    .btn{
+      background-color: #111;
+      color: #bbb;
+    }
+    .btn:nth-child(1){
+      border-color: #bbb !important;
+      color: #bbb !important;
+      &:hover{
+        color: #111 !important;
+        background-color: #bbb !important;
+      }
+    }
+    .btn:nth-child(2){
+      background: #bbb;
+      color: #111;
+      &:hover{
+        color: #111 !important;
+      }
+    }
+    .theme-icon-container{
+      &:hover{
+        background-color: #bbb;
+        .theme-icon{
+          color: #111 !important;
+        }
+    }
+  }
+  }
+  .me{
+    background: linear-gradient(#bbb, transparent);
+  }
+  //about
+  #about h5:nth-child(1){
+    color: white !important;
+  }
+  #about .btn {
+    background-color: var(--color-bg-variant) !important;
+    color: #111 !important;
+  }
+  .about_content p {
+    color: #bbb;
+  }
+  .about_card {
+    background-color: var(--color-bg-variant);
+    &:hover{
+      border-color: 3px solid #111;
+      cursor: pointer;
+    }
+    .about_icon {
+      color: #111;
+    }
+    h5 {
+      color: #111 !important;
+    }
+    small {
+      color: #111;
+    }
+  }
+  .about_me{
+    background: linear-gradient(
+    180deg,
+    transparent,
+    #bbb,
+    transparent
+  );
+  }
+
+  //navbar
+  nav a.active {
+    background: #bbb;
+    color: var(--color-bg);
+  }
+  //exp
+  #experience h5:nth-child(1){
+    color: white !important;
+  }
+  .experience_container > div {
+    background: var(--color-bg-variant);
+    &:hover{
+        background: #999;
+        cursor: pointer;
+    }
+  }
+  .experience_container > div h3 {
+    color: #111;
+  }
+  h2 {
+    color: white;
+  }
+  .experience_details_icon,
+  h4,
+  small {
+    color: #111;
+  }
+  //services
+  #services h5:nth-child(1){
+    color: white !important;
+  }
+  .service_container .service {
+    background-color: #bbb;
+    color: #111;
+    border: 1px solid #bbb;
+    .service_head {
+      background-color: #111;
+      h3 {
+        color: white;
+      }
+    }
+  }
+  //portfolio
+  #portfolio h5:nth-child(1){
+    color: white !important;
+  }
+  .portfolio_item{
+    background-color: #bbb;
+    color: #111;
+  }
+
+  //testimonials
+  #testimonials>h5{
+    color: white !important;
+  }
+  .testimonial{
+    background-color: #bbb;
+    .client_name{
+      color: #111;
+    }
+  }
+  .swiper-pagination-clickable .swiper-pagination-bullet{
+    background: white;
+    color: #111;
+}
+  //contact
+  #contact h5:nth-child(1){
+    color: white;
+  }
+  .contact_option{
+    background-color: #bbb;
+    color: #111;
+    h5, a{
+      color: #111;
+    }
+  }
+  form input, textarea{
+    border: 1px solid #bbb;
+  } 
+  .btn{
+    background-color: #bbb;
+    border: 1px solid #bbb;
+  }
+  footer{
+    background-color: #111;
+    .footer_logo{
+      color: #bbb;
+    }
+    .permalinks a{
+      color: #bbb;
+    }
+    .footer_socail a{
+      background-color: #bbb;
+      color: #111;
+    }
+  }
+  .footer_copyright small{
+    color: #bbb;
+  }
+  .portfolio_item_cta .btn{
+    color: #111;
+    border: 1px solid #111;
+  }
+}

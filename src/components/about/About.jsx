@@ -40,9 +40,9 @@ const About=()=> {
             </article>
           </div>
           <p>
-          Hello! My name is Muhammad Saeed, and I am thrilled to welcome you to my portfolio.Thank you for taking the time to explore my portfolio. I look forward to connecting with you and discussing how I can contribute to your next project. Let's collaborate and create something extraordinary together!
+          Welcome to my portfolio! I am Muhammad Saeed, a passionate Web Development with a deep love for creativity and innovation. I invite you to explore my portfolio, where you will find a collection of my best work and experiences
           </p>
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          <a href="#contact" className='btn'>Let's Talk</a>
         </div>
       </div>
     </section>

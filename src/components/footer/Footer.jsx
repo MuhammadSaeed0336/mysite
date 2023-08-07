@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
-import { AiFillCaretUp } from "react-icons/ai";
+import { BiUpArrow } from "react-icons/bi";
 
 const Footer = () => {
+  const [show, setShow] = useState(false)
+  const controlNavbar = () => {
+      if (window.scrollY > 250 ) {
+          setShow(true)
+      }else{
+        setShow(false)
+      }
+  }
+
+  useEffect(() => {
+      window.addEventListener('scroll', controlNavbar)
+      return () => {
+          window.removeEventListener('scroll', controlNavbar)
+      }
+  }, [])
+
   return (
-    <footer id="footer" >
-        <a href="#" className="footer_logo">
-          <b><i>MrSKK</i></b>
-        </a>
+    <footer>
+      <a href="#" className="footer_logo">
+        MUHAMMAD SAEED
+      </a>
+
       <ul className="permalinks">
         <li>
           <a href="#">Home</a>
@@ -37,7 +54,7 @@ const Footer = () => {
 
       <div className="footer_socail">
         <a href="http://facebook.com">
-          <FaFacebook />
+          <FaFacebookF />
         </a>
         <a href="http://instagram.com">
           <BsInstagram />
@@ -50,13 +67,11 @@ const Footer = () => {
       <div className="footer_copyright">
         <small>&copy; MrSKK Chanel. All Right Reserved</small>
       </div>
-
-      <div className="up">
-        <a href="#" className="scroll_up">
-          <AiFillCaretUp />
+      <div className={`active ${show && 'hidden'}`}>
+        <a href="#header">
+          <BiUpArrow />
         </a>
       </div>
-
     </footer>
   );
 };
