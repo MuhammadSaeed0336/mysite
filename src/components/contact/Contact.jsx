@@ -4,6 +4,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { RiMessengerFill } from "react-icons/ri";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import {Link} from "react-router-dom";
 
 const Contact = () => {
   const form = useRef();
@@ -35,30 +36,28 @@ const Contact = () => {
               <br />
               @gmail.com
             </h5>
-            <a href="mailto:muhammadsaeed033696@gmail.com" target="_blank">
+            <Link to="mailto:muhammadsaeed033696@gmail.com">
               Send a message
-            </a>
+            </Link>
           </article>
 
           <article className="contact_option">
             <RiMessengerFill className="contact_option_icon" />
             <h4>Messenger</h4>
             <h5>Muhammad Saeed</h5>
-            <a href="http://m.me/earnest.achiever" target="_blank">
+            <Link to="http://m.me/earnest.achiever" target="_blank">
               Send a message
-            </a>
+            </Link>
           </article>
 
           <article className="contact_option">
             <RiWhatsappFill className="contact_option_icon" />
             <h4>Whatsapp</h4>
             <h5>+92 336 9682471</h5>
-            <a
-              href="http://api.whatsapp.com/send?phone+923369682471"
-              target="_blank"
-            >
+            <Link
+              href="http://api.whatsapp.com/send?phone+923369682471">
               Send a message
-            </a>
+            </Link>
           </article>
         </div>
         {/* end of contact option */}

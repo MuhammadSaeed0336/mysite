@@ -4,6 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
 import { BiUpArrow } from "react-icons/bi";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   const [show, setShow] = useState(false)
@@ -24,13 +25,13 @@ const Footer = () => {
 
   return (
     <footer>
-      <a href="#" className="footer_logo">
+      <a href="#header" className="footer_logo">
         MUHAMMAD SAEED
       </a>
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#header">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -53,15 +54,15 @@ const Footer = () => {
       </ul>
 
       <div className="footer_socail">
-        <a href="http://facebook.com">
+        <Link to="http://facebook.com">
           <FaFacebookF />
-        </a>
-        <a href="http://instagram.com">
+        </Link>
+        <Link to="http://instagram.com">
           <BsInstagram />
-        </a>
-        <a href="http://twitter.com">
+        </Link>
+        <Link to="http://twitter.com">
           <FaTwitter />
-        </a>
+        </Link>
       </div>
 
       <div className="footer_copyright">
