@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
@@ -8,16 +8,16 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import { DarkModeContext } from "./context/DarkModeContext";
 import "./style/dark.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ComPortfolio from "./components/ComPortfolio/ComPortfolio";
+import { useSelector } from "react-redux";
 
 function App() {
-   const { darkMode } = useContext(DarkModeContext);
-
+  const {mode} = useSelector((state)=>state.darkMode)
+  
   return (
-     <div className={darkMode ? "app dark" : "app"}>
+      <div className={mode ? "app dark" : "app"}>
       <BrowserRouter>
         <Header />
         <Nav />
@@ -32,7 +32,7 @@ function App() {
         <Contact />
         <Footer />
       </BrowserRouter>
-     </div>
+      </div>
   );
 }
 

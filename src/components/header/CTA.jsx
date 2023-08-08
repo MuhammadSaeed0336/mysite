@@ -1,33 +1,37 @@
-import React from 'react';
+import React from "react";
 import CV from "../../assets/cv.pdf";
-
 import { BsMoonFill } from "react-icons/bs";
 import { MdLightMode } from "react-icons/md";
-import { useContext } from "react";
-import { DarkModeContext } from "../../context/DarkModeContext";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleDarkMode } from "../../feature/darkModeSlice";
 
 function CTA() {
-  const { dispatch, darkMode } = useContext(DarkModeContext);
+  const {mode} = useSelector((state)=> state.darkMode)
+  const dispatch = useDispatch();
 
   return (
-    <div className='cta'>
-        <a href={CV} download className='btn'>Download CV</a>
-        <a href='#contact' className='btn'>Let's Talk</a>
-        <div className='theme-icon-container'>
-        {darkMode === true ? (
-      <MdLightMode
-        className="theme-icon"
-        onClick={() => dispatch({ type: "TOGGLE" })}
-      />
-    ) : (
-      <BsMoonFill
-        className="theme-icon"
-        onClick={() => dispatch({ type: "TOGGLE" })}
-      />
-    )}
+    <div className="cta">
+      <a href={CV} download className="btn">
+        Download CV
+      </a>
+      <a href="#contact" className="btn">
+        Let's Talk
+      </a>
+      <div className="theme-icon-container">
+        {mode === true ? (
+          <MdLightMode
+            className="theme-icon"
+            onClick={()=>dispatch(toggleDarkMode())}
+          />
+        ) : (
+          <BsMoonFill
+            className="theme-icon"
+            onClick={()=>dispatch(toggleDarkMode())}
+          />
+        )}
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
 export default CTA;
