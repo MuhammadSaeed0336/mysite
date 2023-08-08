@@ -12,6 +12,7 @@ import "./style/dark.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ComPortfolio from "./components/ComPortfolio/ComPortfolio";
 import { useSelector } from "react-redux";
+import SkillSlider from "./components/skillSlider/SkillSlider";
 
 function App() {
   const {mode} = useSelector((state)=>state.darkMode)
@@ -23,6 +24,7 @@ function App() {
         <Nav />
         <About />
         <Experience />
+        <SkillSlider />
         <Services />
         <Portfolio />
         <Routes>
