@@ -4,23 +4,26 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
 import { BiUpArrow } from "react-icons/bi";
+import { MdAttachEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { RiMessengerFill, RiWhatsappFill } from "react-icons/ri";
 
 const Footer = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   const controlNavbar = () => {
-      if (window.scrollY > 250 ) {
-          setShow(true)
-      }else{
-        setShow(false)
-      }
-  }
+    if (window.scrollY > 250) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
 
   useEffect(() => {
-      window.addEventListener('scroll', controlNavbar)
-      return () => {
-          window.removeEventListener('scroll', controlNavbar)
-      }
-  }, [])
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
 
   return (
     <footer>
@@ -53,21 +56,30 @@ const Footer = () => {
       </ul>
 
       <div className="footer_socail">
-        <a href="http://facebook.com">
+        <Link to="http://facebook.com">
           <FaFacebookF />
-        </a>
-        <a href="http://instagram.com">
+        </Link>
+        <Link to="http://instagram.com">
           <BsInstagram />
-        </a>
-        <a href="http://twitter.com">
+        </Link>
+        <Link to="http://twitter.com">
           <FaTwitter />
-        </a>
+        </Link>
+        <Link to="mailto:muhammadsaeed033696@gmail.com">
+          <MdAttachEmail />
+        </Link>
+        <Link to="http://m.me/earnest.achiever" target="_blank">
+          <RiMessengerFill />
+        </Link>
+        <Link to="http://api.whatsapp.com/send?phone+923369682471">
+          <RiWhatsappFill />
+        </Link>
       </div>
 
       <div className="footer_copyright">
         <small>&copy; MrSKK Chanel. All Right Reserved</small>
       </div>
-      <div className={`active ${show && 'hidden'}`}>
+      <div className={`active ${show && "hidden"}`}>
         <a href="#header">
           <BiUpArrow />
         </a>

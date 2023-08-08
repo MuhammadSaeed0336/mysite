@@ -1,10 +1,6 @@
 import "./Contact.css";
-import { MdAttachEmail } from "react-icons/md";
-import { RiWhatsappFill } from "react-icons/ri";
-import { RiMessengerFill } from "react-icons/ri";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import {Link} from "react-router-dom";
 
 const Contact = () => {
   const form = useRef();
@@ -27,40 +23,6 @@ const Contact = () => {
       <h2>Contact ME</h2>
 
       <div className="container contact_container">
-        <div className="contact_options">
-          <article className="contact_option">
-            <MdAttachEmail className="contact_option_icon" />
-            <h4>Email</h4>
-            <h5>
-              muhammadsaeed033696
-              <br />
-              @gmail.com
-            </h5>
-            <Link to="mailto:muhammadsaeed033696@gmail.com">
-              Send a message
-            </Link>
-          </article>
-
-          <article className="contact_option">
-            <RiMessengerFill className="contact_option_icon" />
-            <h4>Messenger</h4>
-            <h5>Muhammad Saeed</h5>
-            <Link to="http://m.me/earnest.achiever" target="_blank">
-              Send a message
-            </Link>
-          </article>
-
-          <article className="contact_option">
-            <RiWhatsappFill className="contact_option_icon" />
-            <h4>Whatsapp</h4>
-            <h5>+92 336 9682471</h5>
-            <Link
-              href="http://api.whatsapp.com/send?phone+923369682471">
-              Send a message
-            </Link>
-          </article>
-        </div>
-        {/* end of contact option */}
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
@@ -79,7 +41,19 @@ const Contact = () => {
             Send Message
           </button>
         </form>
-      </div>
+        {/* end of form*/}
+
+        <div className="contact_option">
+            <iframe className="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212780.22019970918!2d72.85333494482117!3d33.56140540046243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df948974419acb%3A0x984357e1632d30f!2sRawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1691044090766!5m2!1sen!2s"
+              frameBorder="0"
+              allowFullScreen=""
+              aria-hidden="false"
+              title="Contact Me"
+              tabIndex="0"
+            ></iframe>
+          </div>
+        </div>
     </section>
   );
 };

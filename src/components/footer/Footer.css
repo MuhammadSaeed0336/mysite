@@ -28,6 +28,7 @@ footer a {
     margin-bottom: 4rem;
 }
 .footer_socail a{
+    font-size: 18px;
     background: var(--color-white);
     color: var(--color-bg);
     padding: 0.8rem;
