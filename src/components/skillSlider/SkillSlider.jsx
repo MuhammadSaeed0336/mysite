@@ -44,7 +44,7 @@ const SkillSlider = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -55,48 +55,48 @@ const SkillSlider = () => {
     <section>
       <Slider {...settings} className="slider container">
         <div className="item">
-          <SiHtml5 />
+          <SiHtml5 className="skill-icon" />
         </div>
         <div className="item">
-          <SiCss3 />
+          <SiCss3 className="skill-icon" />
         </div>
         <div className="item">
-          <SiBootstrap />
+          <SiBootstrap className="skill-icon" />
         </div>
         <div className="item">
-          <SiMui />
-        </div>
-
-        <div className="item">
-          <SiJavascript />
+          <SiMui className="skill-icon" />
         </div>
 
         <div className="item">
-          <SiReact />
+          <SiJavascript className="skill-icon" />
         </div>
 
         <div className="item">
-          <SiNodedotjs />
+          <SiReact className="skill-icon" />
         </div>
 
         <div className="item">
-          <SiMongoose />
+          <SiNodedotjs className="skill-icon" />
         </div>
 
         <div className="item">
-          <SiGit />
+          <SiMongoose className="skill-icon" />
         </div>
 
         <div className="item">
-          <SiGithub />
+          <SiGit className="skill-icon" />
         </div>
 
         <div className="item">
-          <SiPostman />
+          <SiGithub className="skill-icon" />
         </div>
 
         <div className="item">
-          <SiVisualstudiocode />
+          <SiPostman className="skill-icon" />
+        </div>
+
+        <div className="item">
+          <SiVisualstudiocode className="skill-icon" />
         </div>
       </Slider>
     </section>

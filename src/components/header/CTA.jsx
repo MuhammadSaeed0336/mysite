@@ -1,7 +1,8 @@
 import React from "react";
 import CV from "../../assets/cv.pdf";
 import { BsMoonFill } from "react-icons/bs";
-import { MdLightMode } from "react-icons/md";
+import {MdLightMode} from "react-icons/md";
+import { FaFileDownload} from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../../feature/darkModeSlice";
 
@@ -11,8 +12,8 @@ function CTA() {
 
   return (
     <div className="cta">
-      <a href={CV} download className="btn">
-        Download CV
+      <a href={CV} download className="btn">CV
+        <FaFileDownload className="down-icon"/>
       </a>
       <a href="#contact" className="btn">
         Let's Talk

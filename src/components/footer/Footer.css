@@ -20,6 +20,9 @@ footer a {
     gap: 2rem;
     margin: 0 auto 3rem;
 }
+.permalinks li{
+    transition: 0.7s;
+}
 .permalinks li:hover{
     transform: scale(1.1, 1.1);
 }
@@ -29,6 +32,7 @@ footer a {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 4rem;
+    flex-wrap: wrap !important;
 }
 .footer_socail a{
     font-size: 18px;
@@ -36,7 +40,7 @@ footer a {
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;
-    border: 1px solid transparent;
+    transition: 0.5s;
 }
 .footer_socail a:hover{
     background: transparent;
@@ -81,8 +85,10 @@ footer a {
     }
     .footer_socails{
         margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
     }
-    .up{
+    .active{
         display: none;
     }
   }

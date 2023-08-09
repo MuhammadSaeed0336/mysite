@@ -2,5 +2,15 @@
     text-align: center;
 }
 .item{
+    display: flex !important;
+    justify-content: center;
+    padding: .5rem;
+}
+.skill-icon{
     font-size: 44px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.skill-icon:hover{
+    transform: scale(1.2, 1.2);
 }
