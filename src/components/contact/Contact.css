@@ -24,7 +24,7 @@ input, textarea{
     background: transparent;
     border: 2px solid var(--color-bg-variant);
     resize: none;
-    color: var(--color-light);
+    color: var(--color-white);
 }
 form .btn{
     color: white;

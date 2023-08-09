@@ -1,6 +1,8 @@
 import "./Contact.css";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const form = useRef();
@@ -17,6 +19,14 @@ const Contact = () => {
     e.target.reset();
   };
 
+  const notify = () => {
+    if(toast.success){
+      toast.success('Successfully message Send!');
+    }else{
+      toast.error('Something went Wrong')
+    }
+  };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -30,15 +40,15 @@ const Contact = () => {
             placeholder="Your Full Name"
             required
           />
-          <input type="text" name="email" placeholder="Your Email" required />
+          <input type="email" name="email" placeholder="Your Email" required />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn">
-            Send Message
+          <button type="submit" className="btn" onClick={notify}>
+            Send Message <ToastContainer position="top-left" />
           </button>
         </form>
         {/* end of form*/}

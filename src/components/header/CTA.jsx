@@ -12,7 +12,7 @@ function CTA() {
 
   return (
     <div className="cta">
-      <a href={CV} download className="btn">CV
+      <a href={CV} download="MSaeedCV.pdf" className="btn">CV
         <FaFileDownload className="down-icon"/>
       </a>
       <a href="#contact" className="btn">
