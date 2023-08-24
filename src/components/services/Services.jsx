@@ -15,25 +15,37 @@ const Services = () =>  {
           </div>
 
           <ul className='service_list'>
-            <li>
+          <li>
               <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur.</p>
+              <p>Originality</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur.</p>
+              <p>Relevance</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur.</p>
+              <p>Quality</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur.</p>
+              <p>Creativity</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur.</p>
+              <p>Visual Elements</p>
+            </li>
+            <li>
+              <BiCheck className='service_list_icon'/>
+              <p>Research</p>
+            </li>
+            <li>
+              <BiCheck className='service_list_icon'/>
+              <p>Adaptability</p>
+            </li>
+            <li>
+              <BiCheck className='service_list_icon'/>
+              <p>Longevity</p>
             </li>
           </ul>
         </article>
@@ -93,23 +105,35 @@ const Services = () =>  {
           <ul className='service_list'>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Originality.</p>
+              <p>Originality</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Relevance.</p>
+              <p>Relevance</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Quality.</p>
+              <p>Quality</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Creativity.</p>
+              <p>Creativity</p>
             </li>
             <li>
               <BiCheck className='service_list_icon'/>
-              <p>Visual Elements.</p>
+              <p>Visual Elements</p>
+            </li>
+            <li>
+              <BiCheck className='service_list_icon'/>
+              <p>Research</p>
+            </li>
+            <li>
+              <BiCheck className='service_list_icon'/>
+              <p>Adaptability</p>
+            </li>
+            <li>
+              <BiCheck className='service_list_icon'/>
+              <p>Longevity</p>
             </li>
           </ul>
         </article>
