@@ -67,6 +67,7 @@
   @media screen and (max-width: 600px) {
     .container.testimonials_container{
         width: var(--container-width-sm);
+        margin: 0 1rem;
     }
     .client_review{
         width: var(--container-width-sm);

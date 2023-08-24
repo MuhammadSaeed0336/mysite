@@ -46,6 +46,7 @@ form .btn:hover{
   @media screen and (max-width: 600px) {
     .container.contact_container{
         width: var(--container-width-sm);
+        margin: 0 1rem;
     }
   }
   
