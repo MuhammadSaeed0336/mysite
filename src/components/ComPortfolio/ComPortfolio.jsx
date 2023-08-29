@@ -2,6 +2,7 @@ import './ComPortfolio.css'
 import IMG6 from "../../assets/porfolio6.jpg";
 import IMG8 from "../../assets/porfolio8.jpg";
 import IMG9 from "../../assets/porfolio9.jpg";
+import IMG10 from "../../assets/porfolio10.jpg";
 
 const data = [
   {
@@ -24,6 +25,13 @@ const data = [
     title: 'Booking App',
     github: "https://patreon.com/MrSKK?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link",
     demo: 'https://bookingapp-pied.vercel.app/'
+  },
+  {
+    id: 10,
+    image: IMG10,
+    title: 'Booking App',
+    github: "https://patreon.com/MrSKK?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link",
+    demo: 'https://video-sharing-app-wheat.vercel.app/'
   }
 ];
 
