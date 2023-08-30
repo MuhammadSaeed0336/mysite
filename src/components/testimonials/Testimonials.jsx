@@ -13,7 +13,6 @@ import { Navigation, Pagination, A11y } from 'swiper/modules';
 import "swiper/css";
 import 'swiper/css/navigation';
 import "swiper/css/pagination";
-import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -61,14 +60,6 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials">
-      
-       <div className="container btnContainer">
-        <Link to="/comportfolio">
-          <button className='p-btn'>ALL PROJECTS</button>
-        </Link>
-      </div>
-
-
       <h5>Review from Clients</h5>
       <h2>Testimonials</h2>
 

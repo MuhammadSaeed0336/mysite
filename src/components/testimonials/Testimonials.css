@@ -39,19 +39,6 @@
     padding-bottom: 5rem;
     margin-top: -6rem !important;
 }
-.p-btn{
-    all: unset;
-    width: 100%;
-    height: fit-content;
-    font-size: 20px;
-    margin-top: 2rem;
-    background-color: var(--color-bg-variant);
-    border-radius: 0 0 3rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
 
 /* =========Media quries (medium devices ========*/
 @media screen and (max-width: 1024px) {

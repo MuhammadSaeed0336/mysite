@@ -9,8 +9,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./style/dark.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ComPortfolio from "./components/ComPortfolio/ComPortfolio";
+import { BrowserRouter } from "react-router-dom";
 import { useSelector } from "react-redux";
 import SkillSlider from "./components/skillSlider/SkillSlider";
 
@@ -27,9 +26,6 @@ function App() {
         <SkillSlider />
         <Services />
         <Portfolio />
-        <Routes>
-          <Route path="/comportfolio" element={<ComPortfolio />} />
-        </Routes>
         <Testimonials />
         <Contact />
         <Footer />

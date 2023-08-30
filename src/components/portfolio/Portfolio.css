@@ -33,7 +33,19 @@
     margin-bottom: 1rem;
     justify-content: center;
 }
-
+.see-more-btn{
+    text-align: center;
+    margin-top: 20px !important;
+}
+.see-more-btn .btn{
+    box-shadow: 0 0 0 0 var(--color-bg);
+    animation: pulse 2s cubic-bezier(.25,0,0,1) 2s infinite;
+}
+@keyframes pulse {   
+    100% {
+        box-shadow: 0 0 0 18px hsla(0,0%,100%,0);
+    }
+}
 /* =========Media quries (medium devices ========*/
 @media screen and (max-width: 1024px) {
     .portfolio_container{
