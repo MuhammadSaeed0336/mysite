@@ -1,31 +1,30 @@
+import axios from "axios";
 import "./Contact.css";
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-  const form = useRef();
+  const [formData, setFormData] = useState(new FormData())
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
 
-    emailjs.sendForm(
-      "service_bxyxyuc",
-      "template_hpequ4p",
-      form.current,
-      "uiXLOIoK15lHesQSn"
-    );
-    e.target.reset();
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault()
 
-  const notify = () => {
-    if(toast.success){
-      toast.success('Successfully message Send!');
-    }else{
-      toast.error('Something went Wrong')
+    if (!(formData.name && formData.email && formData.message)) {
+      toast.error('Something went wrong!')
+      return
     }
-  };
+
+    toast.success(`Thanks ${formData.name}, form Submitted Successfully!`)
+    axios.post('https://formspree.io/f/xleyglwl', formData, {
+      Accept: 'application/json',
+    })
+    setFormData({})
+  }
 
   return (
     <section id="contact">
@@ -33,21 +32,23 @@ const Contact = () => {
       <h2>Contact ME</h2>
 
       <div className="container contact_container">
-        <form ref={form} onSubmit={sendEmail}>
+        <form>
           <input
             type="text"
             name="name"
             placeholder="Your Full Name"
             required
+            onChange={handleChange}
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="email" name="email" placeholder="Your Email" required onChange={handleChange} />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
             required
+            onChange={handleChange}
           ></textarea>
-          <button type="submit" className="btn" onClick={notify}>
+          <button type="submit" className="btn" onClick={handleSubmit}>
             Send Message <ToastContainer position="top-left" />
           </button>
         </form>

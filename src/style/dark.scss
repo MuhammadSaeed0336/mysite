@@ -87,12 +87,6 @@ h1{
     transparent
   );
   }
-
-  //navbar
-  nav a.active {
-    background: #bbb;
-    color: var(--color-bg);
-  }
   //exp
   #experience h5:nth-child(1){
     color: white !important;
@@ -159,6 +153,7 @@ h1{
   }
   form input, textarea{
     border: 1px solid #bbb;
+    color: #bbb;
   } 
   .btn{
     background-color: #bbb;
