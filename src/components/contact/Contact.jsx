@@ -20,7 +20,7 @@ const Contact = () => {
     }
 
     toast.success(`Thanks ${formData.name}, form Submitted Successfully!`)
-    axios.post('https://formspree.io/f/xleyglwl', formData, {
+    axios.post('https://formspree.io/f/myyqjobp', formData, {
       Accept: 'application/json',
     })
     setFormData({})
