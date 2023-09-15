@@ -71,6 +71,13 @@ const Testimonials = () => {
         spaceBetween={50}
         slidesPerView={1}
         speed={2000}
+        breakpoints={{
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 3,
+          },
+        }}
       >
         {data.map(({ avatar, name, review, rating }, i) => {
           return (

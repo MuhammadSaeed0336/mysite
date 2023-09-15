@@ -1,0 +1,30 @@
+.slider{
+    text-align: center;
+}
+.item{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    height: 450px;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+.card-head{
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+.card-head img{
+    object-fit: cover;
+}
+.card-body{
+    flex: 1.2;
+    overflow: hidden;
+}
