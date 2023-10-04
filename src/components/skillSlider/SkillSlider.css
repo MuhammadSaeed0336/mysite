@@ -3,8 +3,12 @@
 }
 .item{
     display: flex !important;
+    flex-direction: column;
     justify-content: center;
     padding: .5rem;
+}
+.item>p{
+    visibility: hidden;
 }
 .skill-icon{
     font-size: 44px;
