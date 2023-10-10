@@ -1,8 +1,8 @@
 import axios from "axios";
 import "./Contact.css";
-import React, { useState } from "react";
+import React from "react";
 import { ToastContainer, toast } from 'react-toastify';
-import { Formik, Field, Form, ErrorMessage, useFormik } from 'formik';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import 'react-toastify/dist/ReactToastify.css';
 
