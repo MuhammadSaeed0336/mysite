@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
-import { FaFacebookF } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 import { BiUpArrow } from "react-icons/bi";
 import { MdAttachEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { RiMessengerFill, RiWhatsappFill } from "react-icons/ri";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const Footer = () => {
   const [show, setShow] = useState(false);
@@ -56,20 +55,14 @@ const Footer = () => {
       </ul>
 
       <div className="footer_socail">
-        <Link to="http://facebook.com">
-          <FaFacebookF />
-        </Link>
-        <Link to="http://instagram.com">
-          <BsInstagram />
-        </Link>
-        <Link to="http://twitter.com">
-          <FaTwitter />
-        </Link>
+      <Link href="https://www.linkedin.com/in/mrsaeedkk/" >
+        <BsLinkedin />
+      </Link>
+      <Link href="https://github.com/MuhammadSaeed0336" >
+        <FaGithub />
+      </Link>
         <Link to="mailto:muhammadsaeed033696@gmail.com">
           <MdAttachEmail />
-        </Link>
-        <Link to="http://m.me/earnest.achiever" target="_blank">
-          <RiMessengerFill />
         </Link>
         <Link to="http://api.whatsapp.com/send?phone+923369682471">
           <RiWhatsappFill />
@@ -77,7 +70,7 @@ const Footer = () => {
       </div>
 
       <div className="footer_copyright">
-        <small>&copy; MrSKK Chanel. All Right Reserved</small>
+        <small>&copy; Muhammad Saeed. All Right Reserved</small>
       </div>
       <div className={`active ${show && "hidden"}`}>
         <a href="#header">

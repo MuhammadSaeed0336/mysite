@@ -2,29 +2,48 @@ import axios from "axios";
 import "./Contact.css";
 import React, { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import { Formik, Field, Form, ErrorMessage, useFormik } from 'formik';
+import * as Yup from 'yup';
 import 'react-toastify/dist/ReactToastify.css';
 
+const initialValues = {
+  name: '',
+  email: '',
+  message: '',
+};
+const validationSchema = Yup.object().shape({
+  name: Yup.string().required("Name is required"),
+  email: Yup.string().email("Invalid email address").required("Email is required"),
+  message: Yup.string().required("Message is required"),
+});
+
+
 const Contact = () => {
-  const [formData, setFormData] = useState(new FormData())
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-
-    if (!(formData.name && formData.email && formData.message)) {
-      toast.error('Something went wrong!')
-      return
-    }
-
-    toast.success(`Thanks ${formData.name}, form Submitted Successfully!`)
-    axios.post('https://formspree.io/f/myyqjobp', formData, {
-      Accept: 'application/json',
-    })
-    setFormData({})
-  }
+  const formik = useFormik({
+    initialValues,
+    validationSchema,
+    onSubmit: (values , { setSubmitting }) => {
+      axios
+      .post("https://formspree.io/f/myyqjobp", values, {
+        headers: {
+          Accept: "application/json",
+        },
+      })
+      .then((response) => {
+        if (response.status === 200) {
+          toast.success(`Thanks ${values.name}, form submitted successfully!`);
+        } else {
+          toast.error("Something went wrong!");
+        }
+        setSubmitting(false);
+      })
+      .catch((error) => {
+        toast.error("Something went wrong!");
+        setSubmitting(false);
+      });
+      toast.success(`Thanks ${values.name}, form validation successful!`);
+    },
+  });
 
   return (
     <section id="contact">
@@ -32,26 +51,35 @@ const Contact = () => {
       <h2>Contact ME</h2>
 
       <div className="container contact_container">
-        <form>
-          <input
+      <form onSubmit={formik.handleSubmit}>
+              <input
             type="text"
             name="name"
             placeholder="Your Full Name"
             required
-            onChange={handleChange}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.name}
           />
-          <input type="email" name="email" placeholder="Your Email" required onChange={handleChange} />
+          <input type="email" name="email" placeholder="Your Email" required
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
+             />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
             required
-            onChange={handleChange}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.message}
           ></textarea>
-          <button type="submit" className="btn" onClick={handleSubmit}>
-            Send Message <ToastContainer position="top-left" />
+          <button type="submit" className="btn" disabled={formik.isSubmitting}>
+            Send Message 
           </button>
-        </form>
+          <ToastContainer position="top-left" />
+          </form>
         {/* end of form*/}
 
         <div className="contact_option">

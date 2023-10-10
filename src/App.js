@@ -5,14 +5,14 @@ import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
-import Testimonials from "./components/testimonials/Testimonials";
+// import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./style/dark.scss";
 import { BrowserRouter } from "react-router-dom";
 import { useSelector } from "react-redux";
 import SkillSlider from "./components/skillSlider/SkillSlider";
-import BlogSlider from "./components/blogSlider/BlogSlider";
+// import BlogSlider from "./components/blogSlider/BlogSlider";
 
 function App() {
   const {mode} = useSelector((state)=>state.darkMode)
@@ -28,7 +28,7 @@ function App() {
         <Services />
         {/* <BlogSlider /> */}
         <Portfolio />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
         <Footer />
       </BrowserRouter>

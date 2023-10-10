@@ -59,72 +59,72 @@ const SkillSlider = () => {
       <Slider {...settings} className="slider container">
         <div className="item">
           <SiHtml5 className="skill-icon" />
-          <p>HTML</p>
+          {/* <p>HTML</p> */}
         </div>
         <div className="item">
           <SiCss3 className="skill-icon" />
-          <p>CSS</p>
+          {/* <p>CSS</p> */}
         </div>
         <div className="item">
           <SiTailwindcss className="skill-icon" />
-          <p>TAILWIND_CSS</p>
+          {/* <p>TAILWIND_CSS</p> */}
         </div>
         <div className="item">
           <SiStyledcomponents className="skill-icon" />
-          <p>STYLED_COMPONENTS</p>
+          {/* <p>STYLED_COMPONENTS</p> */}
         </div>
         <div className="item">
           <SiBootstrap className="skill-icon" />
-          <p>BOOTSRAP</p>
+          {/* <p>BOOTSRAP</p> */}
         </div>
         <div className="item">
           <SiMui className="skill-icon" />
-          <p>MUI</p>
+          {/* <p>MUI</p> */}
         </div>
 
         <div className="item">
           <SiJavascript className="skill-icon" />
-          <p>JS</p>
+          {/* <p>JS</p> */}
         </div>
 
         <div className="item">
           <SiReact className="skill-icon" />
-          <p>REACT.JS</p>
+          {/* <p>REACT.JS</p> */}
         </div>
 
         <div className="item">
           <SiNextdotjs className="skill-icon" />
-          <p>NEXT.JS</p>
+          {/* <p>NEXT.JS</p> */}
         </div>
 
         <div className="item">
           <SiNodedotjs className="skill-icon" />
-          <p>NODE.JS</p>
+          {/* <p>NODE.JS</p> */}
         </div>
 
         <div className="item">
           <SiMongoose className="skill-icon" />
-          <p>MONGOOSE</p>
+          {/* <p>MONGOOSE</p> */}
         </div>
 
         <div className="item">
           <SiGit className="skill-icon" />
-          <p>GIT</p>
+          {/* <p>GIT</p> */}
         </div>
 
         <div className="item">
           <SiGithub className="skill-icon" />
-          <p>GITHUB</p>
+          {/* <p>GITHUB</p> */}
         </div>
 
         <div className="item">
           <SiPostman className="skill-icon" />
-          <p>POSTMAN</p>
+          {/* <p>POSTMAN</p> */}
         </div>
 
         <div className="item">
           <SiVisualstudiocode className="skill-icon" />
-          <p>VS_CODE</p>
+          {/* <p>VS_CODE</p> */}
         </div>
       </Slider>
     </section>
