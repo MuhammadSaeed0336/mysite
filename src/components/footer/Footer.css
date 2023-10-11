@@ -48,7 +48,9 @@ footer a {
     transform: scale(1.5, 1.5);
 }
 .footer_copyright{
-    margin-bottom: 4rem;
+    text-align: left;
+    margin-bottom: -3rem;
+    margin-left: 3rem;
     color: var(--color-white);
 }
 .active{

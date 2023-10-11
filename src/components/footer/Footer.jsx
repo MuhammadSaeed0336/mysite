@@ -46,25 +46,25 @@ const Footer = () => {
         <li>
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#testimonails">Testimonails</a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <div className="footer_socail">
-      <Link href="https://www.linkedin.com/in/mrsaeedkk/" >
+      <Link to="https://www.linkedin.com/in/mrsaeedkk/" target="_blank" >
         <BsLinkedin />
       </Link>
-      <Link href="https://github.com/MuhammadSaeed0336" >
+      <Link to="https://github.com/MuhammadSaeed0336" target="_blank">
         <FaGithub />
       </Link>
-        <Link to="mailto:muhammadsaeed033696@gmail.com">
+        <Link to="mailto:muhammadsaeed033696@gmail.com" target="_blank">
           <MdAttachEmail />
         </Link>
-        <Link to="http://api.whatsapp.com/send?phone+923369682471">
+        <Link to="http://api.whatsapp.com/send?phone+923369682471" target="_blank">
           <RiWhatsappFill />
         </Link>
       </div>

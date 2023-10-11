@@ -38,10 +38,9 @@ const Contact = () => {
         setSubmitting(false);
       })
       .catch((error) => {
-        toast.error("Something went wrong!");
+        toast.error("Something went wrong!", error);
         setSubmitting(false);
       });
-      toast.success(`Thanks ${values.name}, form validation successful!`);
     },
   });
 
